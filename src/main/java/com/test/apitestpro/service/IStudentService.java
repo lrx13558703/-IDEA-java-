@@ -7,4 +7,10 @@ import java.util.List;
 
 public interface IStudentService {
     List<StudentOutDTO> getStudentInfos();
+
+    boolean setmessage(String indto);
+
+    boolean setredis();
+
+    String getredis(String into);
 }
