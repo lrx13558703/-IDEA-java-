@@ -1,0 +1,12 @@
+# 配置端口
+server:
+  port: 6688
+spring:
+  profiles:
+#  配置的环境
+    active: dev
+
+# mybatis 配置
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
