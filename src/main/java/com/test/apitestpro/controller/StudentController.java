@@ -2,6 +2,8 @@ package com.test.apitestpro.controller;
 
 import com.test.apitestpro.dtos.StudentOutDTO;
 import com.test.apitestpro.service.IStudentService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,6 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "apitestpro/student")
+@Api(tags = "学生管理系统")
 public class StudentController {
     @Autowired
     private IStudentService iStudentService;
